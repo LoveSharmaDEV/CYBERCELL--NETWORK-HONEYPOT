@@ -17,3 +17,5 @@ Then simply run the file to start the server:
 Note: sudo is simply needed to bind to port 22, although this can be easily changed if desired (it will present a generic OpenSSH banner/fingerprint to network scanners to find regardless of the port)
 
 ![Scan](screenshots/nmap.png "Spoofed Banner")
+
+![Screenshot from 2019-07-01 22-11-23](https://user-images.githubusercontent.com/31883696/60452877-378e5380-9c4d-11e9-956a-521248b5b9eb.png)
