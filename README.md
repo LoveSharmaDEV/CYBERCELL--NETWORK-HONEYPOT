@@ -3,8 +3,11 @@
 
 Python program to emulate an ssh server as a sort of psuedo-honeypot with some fun commands. It will accept all connections given any provided username/password for authentication.
 
-Utilizes paramiko for the OpenSSH protocol. A generic private key is provided for convenience, although it can be substituted out for another key if desired.
+Utilizes paramiko for the OpenSSH protocol. A generic private key is provided for convenience, although it can be substituted out for another key if desired. </br>
 
+Being a low interaction honeypot, it is not much interactive to the attacker. The code can be customised to run fixed commands that provides enough information to keep attacker engaged. The interface provided is not much interactive.
+So the interactive commands can be hard coded to give some false value or restriction banner.</br>
+We have used python subprocess library to basically run remote commands on local machine and then return output to the attacker. But this feature can be fully controlled for blacklisting any command or for just allowing bfew commands.
 ## Usage
 This should be able to run on both python 2 and 3 with paramiko as the only requirement
 
