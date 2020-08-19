@@ -11,8 +11,25 @@
 
 
 * In this project we have have used python ***subprocess*** library to basically run remote commands on local machine and then return output to the attacker. But this feature can be fully controlled and customized for blacklisting any command or for just allowing few commands.
+
+# NeuralNet Involvement
+
+* This fake SSH would able to log down every activity performed by an attacker for example (logging brute force attack).
+
+* We have used artificial neural networks to analyze the logs collected from the fake server.
+
+* For this we have created a dataset you can refer data.csv in the project. 
+
+* Anybody who access the honeypot is an intruder. Because the service has been laid down for that similar purpose.
+
+* We have used neural net not for alerting whether the attacker is accessing system or not (though its a secondary aim), the main aim of nueral network is to monitor the activity of attacker in the system. Because it wont be feasible to again and again look the log files. 
+
+* So we have created a nueral net model to simply analyze the logs as they come in and show the prediction on a dynamic graph.
+
+
+
 ## Usage
-This should be able to run on both python 2 and 3 with paramiko as the only requirement
+This should be able to run on both python 2 and 3 with paramiko as the only requirement.
 
 `pip install paramiko`
 
